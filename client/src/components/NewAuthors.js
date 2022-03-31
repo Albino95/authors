@@ -3,7 +3,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import axios from 'axios';
 
 
-const NewProduct = (props) => {
+const NewAuthor = (props) => {
     const [name, setName] = useState("")
 
     const navigate = useNavigate();
@@ -42,7 +42,7 @@ const NewProduct = (props) => {
 
 
                 <button type= 'submit'>Submit</button>
-                <button onClick={navigate('/')}>Cancel</button>
+                <Link to = {'/'}>Cancel</Link>
             </form>
         </div>
     )

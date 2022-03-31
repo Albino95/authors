@@ -37,8 +37,7 @@ const AllAuthors = (props) => {
             <header>
                 <h1> Favorite Authors</h1>
                 <Link to = {'/new'}>Add a Favorite Author</Link>
-
-                </header>
+            </header>
 
                 {
                     authorsList.map((author, index) => (

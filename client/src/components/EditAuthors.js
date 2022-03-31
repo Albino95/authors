@@ -3,7 +3,7 @@ import axios from "axios";
 import { Link, useNavigate, useParams } from "react-router-dom";
 
 
-const EditProduct = (props) => {
+const EditAuthors = (props) => {
 
     const navigate = useNavigate();
 
@@ -54,11 +54,11 @@ const EditProduct = (props) => {
                 </div>
 
                 <button type= 'submit'>Submit</button>
-                <button onClick={navigate('/')}>Cancel</button>
+                <Link to = '/'>Cancel</Link>
             </form>
         </div>
     )
 }
 
 
-export default EditProduct;
+export default EditAuthors;
